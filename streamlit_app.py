@@ -5,8 +5,8 @@ import re
 from rapidfuzz import fuzz, process
 
 # Streamlit app title
-st.title("Optimized Brand List Cleaner with All Flagged Download")
-st.write("Upload your Excel file with a 'Brand' column. This app will clean it by trimming whitespace, standardizing case, removing duplicates, empties, short names, pure numbers, special characters, number prefixes, generic names, numerical artifacts, spelling variants (including space-related variants), long brands with more than two spaces, and obvious generic terms. The summary is shown in an accordion format, with downloads for each flag's removed entries, all flagged entries with reasons, and the cleaned dataset. A progress bar tracks the cleaning process.")
+st.title("Brand clean")
+st.write("Upload your Excel file with a 'Brand' column.")
 
 # File uploader
 uploaded_file = st.file_uploader("Choose an Excel file", type="xlsx")
